@@ -3,25 +3,32 @@
 //
 $include-html-panel-classes: $include-html-classes !default;
 
-// We use these to control the header
+// Header Variables
 $header-bg: null !default;
+$header-min-height: 100px !default;
 
-// We use these to control the title
+// Header Search Form Variables
+$header-search-form-padding-top: ($header-min-height/2) - 18px !default;
+
+// Header Title
 $site-title-font-color: null !default;
 $site-title-font-color-hover: null !default;
 $site-title-font-family: null !default;
 $site-title-font-size: null !default;
 $site-title-font-weight: null !default;
-$site-title-margin: null !default;
+$site-title-line-height: 1 !default;
+$site-title-margin-bottom: 0 !default;
+$site-title-margin-top: 1rem !default;
 $site-title-padding: null !default;
-$site-title-text-transform: null !default;
+$site-title-text-transform: uppercase !default;
 
-// We use these to control the tagline
+// Header Tagline
 $site-tagline-font-color: null !default;
 $site-tagline-font-family: null !default;
 $site-tagline-font-size: null !default;
 $site-tagline-font-weight: null !default;
-$site-tagline-margin: null !default;
+$site-tagline-margin-bottom: null !default;
+$site-tagline-margin-top: 0 !default;
 $site-tagline-padding: null !default;
 $site-tagline-text-transform: null !default;
 
@@ -29,30 +36,44 @@ $panel-header-adjust: true !default;
 $callout-panel-link-color: $primary-color !default;
 
 // 
-// Site Title
+// Site Header
 // 
-.site-title a {
-  color: $site-title-font-color;
+.header {
+  background: $header-bg;
+  min-height: $header-min-height;
+}
+
+// Site Title
+.site-title {
   font-family: $site-title-font-family;
   font-size: $site-title-font-size;
   font-weight: $site-title-font-weight;
-  margin: $site-title-margin;
+  line-height: $site-title-line-height;
+  margin-bottom: $site-title-margin-bottom;
+  margin-top: $site-title-margin-top;
   padding: $site-title-padding;
   text-transform: $site-title-text-transform;
-  &:hover {
-    color: $site-title-font-color-hover;
+  a {
+    color: $site-title-font-color;
+    &:hover {
+      color: $site-title-font-color-hover;
+    }
   }
 }
 
-// 
-// Site tagline
-// 
+// Site Tagline
 .site-tagline {
   color: $site-tagline-font-color;
   font-family: $site-tagline-font-family;
   font-size: $site-tagline-font-size;
   font-weight: $site-tagline-font-weight;
-  margin: $site-tagline-margin;
+  margin-bottom: $site-tagline-margin-bottom;
+  margin-top: $site-tagline-margin-top;
   padding: $site-tagline-padding;
   text-transform: $site-tagline-text-transform;
+}
+
+// Header Search Form
+.header .search-form {
+  padding-top: $header-search-form-padding-top;
 }
