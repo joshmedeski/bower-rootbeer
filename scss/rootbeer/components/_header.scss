@@ -1,0 +1,58 @@
+//
+// @variables
+//
+$include-html-panel-classes: $include-html-classes !default;
+
+// We use these to control the header
+$header-bg: null !default;
+
+// We use these to control the title
+$site-title-font-color: null !default;
+$site-title-font-color-hover: null !default;
+$site-title-font-family: null !default;
+$site-title-font-size: null !default;
+$site-title-font-weight: null !default;
+$site-title-margin: null !default;
+$site-title-padding: null !default;
+$site-title-text-transform: null !default;
+
+// We use these to control the tagline
+$site-tagline-font-color: null !default;
+$site-tagline-font-family: null !default;
+$site-tagline-font-size: null !default;
+$site-tagline-font-weight: null !default;
+$site-tagline-margin: null !default;
+$site-tagline-padding: null !default;
+$site-tagline-text-transform: null !default;
+
+$panel-header-adjust: true !default;
+$callout-panel-link-color: $primary-color !default;
+
+// 
+// Site Title
+// 
+.site-title a {
+  color: $site-title-font-color;
+  font-family: $site-title-font-family;
+  font-size: $site-title-font-size;
+  font-weight: $site-title-font-weight;
+  margin: $site-title-margin;
+  padding: $site-title-padding;
+  text-transform: $site-title-text-transform;
+  &:hover {
+    color: $site-title-font-color-hover;
+  }
+}
+
+// 
+// Site tagline
+// 
+.site-tagline {
+  color: $site-tagline-font-color;
+  font-family: $site-tagline-font-family;
+  font-size: $site-tagline-font-size;
+  font-weight: $site-tagline-font-weight;
+  margin: $site-tagline-margin;
+  padding: $site-tagline-padding;
+  text-transform: $site-tagline-text-transform;
+}
