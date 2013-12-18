@@ -1,8 +1,6 @@
 {
-  "name": "foundation",
-  "version": "0.0.0",
-  // TODO: define main files for rootbeer
-  // "main": ["css/foundation.css", "js/foundation.js"],
+  "name": "rootbeer",
+  "version": "0.1.5",
   "dependencies": {
     "foundation" : ">= 5.0.2",
   },
