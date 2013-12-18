@@ -1,0 +1,17 @@
+{
+  "name": "rootbeer",
+  "version": "0.5.2",
+  "authors": [
+    "Josh Medeski <joshmedeski@users.noreply.github.com>"
+  ],
+  "description": "A Wordpress framework built with Zurb's Foundation.",
+  "main": "rootbeer.scss",
+  "keywords": [
+    "wordpress",
+    "foundation",
+    "theme",
+    "framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/joshmedeski/rootbeer"
+}
