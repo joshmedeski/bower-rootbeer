@@ -3,10 +3,11 @@
 // 
 
 // Custom colored link
-@mixin links($link-color)
+@mixin links($link-color) {
   a {
     color: $link-color;
     
     &:hover,
     &:focus { color: darken($link-color, 5%); }
   }
+}
