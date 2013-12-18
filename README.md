@@ -8,5 +8,5 @@ Run the following command in your Bower project to install Rootbeer
 
 ## Todo
 
--[] Update Compass Gem
--[] Build Sass Components
+- [ ] Update Compass Gem
+- [ ] Build Sass Components
