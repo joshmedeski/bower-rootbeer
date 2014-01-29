@@ -1,0 +1,56 @@
+//
+// THE GRID
+//
+
+// $variables
+$container-bg: !null;
+$main-columns: 9 !default;
+$sidebar-columns: $total-columns - $main-columns !default;
+$sidebar-position: right !default; // options: right or left
+$full-columns: $main-columns !default;
+$footer-columns: $total-columns / 3 !default;
+
+// Container
+//
+.grid__container {
+  background: $container-bg;
+}
+
+// Row
+//
+.grid__row {
+  @include grid-row;
+}
+
+.grid__row--nest {
+  @include grid-row(nest);
+}
+
+// Columns
+//
+.grid__columns,
+.grid__columns--main,
+.grid__columns--sidebar,
+.grid__columns--full,
+.grid__columns--footer {
+  @include grid-column;
+}
+
+@media #{$medium-up} {
+  .grid__columns--main {
+    @include grid-column($main-columns);
+  }
+  .grid__columns--full {
+    @include grid-column(
+      $columns:$full-columns,$center:true,$last-column:true);
+  }
+  .grid__columns--sidebar {
+    @include grid-column($columns:$sidebar-columns,$last-column:true);
+    // Foundation fix to create even spacing between the sidebar and main column
+    padding-left: 0;
+  }
+  .grid__columns--footer {
+    @include grid-column($footer-columns);
+  }
+}
+
