@@ -1,6 +1,6 @@
 {
   "name": "rootbeer",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "authors": [
     "Josh Medeski <joshmedeski@users.noreply.github.com>"
   ],
@@ -17,7 +17,7 @@
   "homepage": "https://github.com/joshmedeski/rootbeer",
   "dependencies": {
     "foundation": "*",
-    "mrms-colors": "*",
+    "mrmrs-colors": "*",
     "jquery.countdown": "*"
   }
 }
